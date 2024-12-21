@@ -1,16 +1,12 @@
-﻿using System;
+﻿using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using UnityEngine;
-using Xiyu.StandingIllustration;
 
 
-namespace MyNamespace
+namespace Xiyu
 {
     public class GameTest : MonoBehaviour
     {
-        private async void Start()
-        {
-            var standingIllustrationLoader = new StandingIllustrationLoader();
-            await standingIllustrationLoader.LoadStandingIllustrationAsync("真奈美a_0_1196");
-        }
+        [SerializeField] private RectTransform rectTransform;
     }
 }
