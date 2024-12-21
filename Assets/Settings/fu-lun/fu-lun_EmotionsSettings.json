@@ -1,0 +1,30 @@
+﻿{
+"fu-lun_001":[
+  {
+    "AddressableName": "fu-lun_1_0_300",
+    "Transform": {
+      "Position": {
+        "x": -57.7,
+        "y": 1055.4
+      },
+      "Size": {
+        "Width": 732.0,
+        "Height": 578.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 0.55,
+        "y": 0.55
+      }
+    }
+  }
+]
+}

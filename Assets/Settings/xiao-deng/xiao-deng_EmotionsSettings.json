@@ -1,0 +1,30 @@
+﻿{
+"xiao-deng_001":[
+  {
+    "AddressableName": "xiao-deng_1_0_216",
+    "Transform": {
+      "Position": {
+        "x": 63.8,
+        "y": 664.84
+      },
+      "Size": {
+        "Width": 864.0,
+        "Height": 693.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 0.4,
+        "y": 0.4
+      }
+    }
+  }
+]
+}

@@ -1,0 +1,108 @@
+﻿{
+"znm_001":[
+  {
+    "AddressableName": "znm_a_0_1490",
+    "Transform": {
+      "Position": {
+        "x": -6.2,
+        "y": 1283.5
+      },
+      "Size": {
+        "Width": 400.0,
+        "Height": 101.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "AddressableName": "znm_a_0_1196",
+    "Transform": {
+      "Position": {
+        "x": -5.4,
+        "y": 1169.6
+      },
+      "Size": {
+        "Width": 413.0,
+        "Height": 162.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "AddressableName": "znm_a_0_1497",
+    "Transform": {
+      "Position": {
+        "x": 1.5,
+        "y": 1033.2
+      },
+      "Size": {
+        "Width": 71.0,
+        "Height": 42.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "AddressableName": "znm_a_0_1489",
+    "Transform": {
+      "Position": {
+        "x": -3.5,
+        "y": 1087.0
+      },
+      "Size": {
+        "Width": 329.0,
+        "Height": 174.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
+    }
+  }
+]
+}

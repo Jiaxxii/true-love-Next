@@ -1,0 +1,30 @@
+﻿{
+"mo-wang_001":[
+  {
+    "AddressableName": "mo-wang_1_0_998",
+    "Transform": {
+      "Position": {
+        "x": 24.1,
+        "y": 1300.5
+      },
+      "Size": {
+        "Width": 803.0,
+        "Height": 620.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 0.55,
+        "y": 0.55
+      }
+    }
+  }
+]
+}

@@ -1,0 +1,44 @@
+﻿{
+  "DefaultCharacterCode": "xiao-deng_1_0_157",
+  "DefaultEmotionCode": "xiao-deng_001",
+  "DefaultTransform": {
+    "Position": {
+      "x": 0.0,
+      "y": -273.0
+    },
+    "Size": {
+      "Width": 1851.73242,
+      "Height": 6363.0
+    },
+    "Pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "EulerAngles": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "Scale": {
+      "x": 0.4,
+      "y": 0.4
+    }
+  },
+  "OptionSelected": {
+    "FirstEncounter": {
+      "Emotion": "未定义-生气（可选）"
+    },
+    "AtThisTime": {
+      "Emotion": "未定义-微笑（可选）"
+    },
+    "AtThatTime": {
+      "Emotion": "未定义-疑惑（可选）"
+    },
+    "Examination": {
+      "Emotion": "未定义-期待（可选）"
+    },
+    "Conclusion": {
+      "Emotion": "未定义-担心（必选）"
+    }
+  }
+}
