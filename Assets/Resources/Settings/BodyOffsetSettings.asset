@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c47b3cfd4e8e901fc00d9b8d4c67, type: 3}
+  m_Name: BodyOffsetSettings
+  m_EditorClassIdentifier: 
+  assetName: BodyOffsetSettings
+  data:
+  - characterCode: ai-shi
+    offsetFile: {fileID: 4900000, guid: 398384ef1ff45a54986612c047875672, type: 3}
+  - characterCode: fu-lun
+    offsetFile: {fileID: 4900000, guid: 32eacc17ed2f00a45b5f76cb70ca2b15, type: 3}
+  - characterCode: mo-wang
+    offsetFile: {fileID: 4900000, guid: 238d3dc4e75fe4a4abfd986a3ffc6834, type: 3}
+  - characterCode: xiao-deng
+    offsetFile: {fileID: 4900000, guid: 58fe0f588da36a843be1f0707e23e70c, type: 3}
+  - characterCode: you-zi
+    offsetFile: {fileID: 4900000, guid: 2e99659cb08b5924aad082e6fc0cf6c8, type: 3}
+  - characterCode: znm
+    offsetFile: {fileID: 4900000, guid: cb83789739520364a8dbf02f3ea06c77, type: 3}

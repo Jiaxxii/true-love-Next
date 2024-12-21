@@ -4,7 +4,7 @@ using Xiyu.GlobalEffect;
 
 namespace Xiyu.Menu
 {
-    public class MenuGameGuide : MonoBehaviour
+    public sealed class MenuGameGuide : MonoBehaviour
     {
         private async void Start()
         {

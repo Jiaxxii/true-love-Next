@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Xiyu.GlobalEffect
 {
-    public class MaskEffect : MonoBehaviour
+    public sealed class MaskEffect : MonoBehaviour
     {
         private static readonly Dictionary<string, ResourceRequest> Buffer = new();
 

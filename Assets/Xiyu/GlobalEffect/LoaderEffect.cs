@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Xiyu.GlobalEffect
 {
-    public class LoaderEffect : MonoBehaviour
+    public sealed class LoaderEffect : MonoBehaviour
     {
         [SerializeField] private Image effectImage;
 

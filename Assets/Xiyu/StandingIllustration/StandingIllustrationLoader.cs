@@ -9,7 +9,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Xiyu.StandingIllustration
 {
-    public class StandingIllustrationLoader : IAsyncEnumerable<KeyValuePair<string, Sprite>>, IDisposable
+    public sealed class StandingIllustrationLoader : IAsyncEnumerable<KeyValuePair<string, Sprite>>, IDisposable
     {
         private readonly ConcurrentDictionary<string, AsyncOperationHandle<Sprite>> _bufferMap = new();
 

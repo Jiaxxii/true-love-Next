@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Xiyu.GlobalEffect
 {
-    public class GlobalEffectManger : MonoBehaviour
+    public sealed class GlobalEffectManger : MonoBehaviour
     {
         private static readonly Lazy<GlobalEffectManger> LazyInstance = new(GetLazyInstance);
 

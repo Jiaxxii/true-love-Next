@@ -16,7 +16,17 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 62a98398f019b954c9a6a6446ac2153e
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: fc80048865412314ba38ca9481dd87c9
+    m_Address: Assets/Settings/ai-shi/ai-shi_EmotionsSettings.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 398384ef1ff45a54986612c047875672
+    m_Address: Assets/Settings/ai-shi/ai-shi_BodyOffsetSettings.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 41d65a0a4853182489d9ee85d11ea088, type: 2}
   m_SchemaSet:
