@@ -1,7 +1,6 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Xiyu.GlobalEffect;
 
 namespace Xiyu.Menu
 {

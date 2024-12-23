@@ -5,7 +5,7 @@ using Xiyu.DataStructure;
 namespace ScriptableObjectSettings
 {
     [CreateAssetMenu(fileName = "SceneAssetsSettings", menuName = "ScriptableObject/场景加载资源信息", order = 0)]
-    public class SceneAssetsSettings : ScriptableObject
+    public sealed class SceneAssetsSettings : ScriptableObject
     {
         [SerializeField] private LoaderMapInfo loaderMapInfo;
 

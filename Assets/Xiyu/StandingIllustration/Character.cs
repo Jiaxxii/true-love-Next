@@ -9,7 +9,7 @@ using Xiyu.DataStructure;
 
 namespace Xiyu.StandingIllustration
 {
-    public class Character : MonoBehaviour
+    public sealed class Character : MonoBehaviour
     {
         private CanvasGroup _baseCanvasGroup;
         private Image _bodyImage;

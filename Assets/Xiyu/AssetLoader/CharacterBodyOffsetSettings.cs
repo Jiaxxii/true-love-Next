@@ -10,7 +10,7 @@ using Xiyu.DataStructure;
 
 namespace Xiyu.AssetLoader
 {
-    public class CharacterBodyOffsetSettings
+    public sealed class CharacterBodyOffsetSettings
     {
         private ConcurrentDictionary<string, LightweightRectTransform> _buffer = new();
         public string AddressableName { get; private set; }
