@@ -10,40 +10,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: emotion_info
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: emotion_info
   m_Data:
     m_SerializedData: []
-  m_GUID: 62a98398f019b954c9a6a6446ac2153e
+  m_GUID: bf59e07e89166944fb08436bbbe8ea29
   m_SerializeEntries:
-  - m_GUID: 0b3a3c2c7ad4f9543a128669498958ba
-    m_Address: znm
+  - m_GUID: fc80048865412314ba38ca9481dd87c9
+    m_Address: ai-shi_EmotionsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 84993b74ed11fdf429ad128333861dbe
-    m_Address: ai-shi
+  - m_GUID: 262900ec7fde3cc4294c1f28a338adc8
+    m_Address: fu-lun_EmotionsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e2dc6b48f14623640b4771335263e224
-    m_Address: mo-wang
+  - m_GUID: 35541a8113db0094f889eb8ba6a084df
+    m_Address: mo-wang_EmotionsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e3062fda7eaf5a84784d12a4947a374c
-    m_Address: fu-lun
+  - m_GUID: e148f518482df9c468efb7f2b91a4e7a
+    m_Address: xiao-deng_EmotionsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d49714c58937769479065d6adfb7ef01
-    m_Address: you-zi
+  - m_GUID: 7d87a540774142f48949c77fb0fa09f2
+    m_Address: you-zi_EmotionsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0df4815881d70a74f815699f820ca49d
-    m_Address: xiao-deng
+  - m_GUID: b3a33e36f0b35954b906ccd0a5c53f89
+    m_Address: znm_EmotionsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -51,5 +51,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: 41d65a0a4853182489d9ee85d11ea088, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 1e59e5a5205bed145840a2f21be0e450, type: 2}
-    - {fileID: 11400000, guid: 47b5e75023450394e9f09b58b80d08fe, type: 2}
+    - {fileID: 11400000, guid: a8c2daaf64516d642b3fec244fff3ee2, type: 2}
+    - {fileID: 11400000, guid: b280d549edf7b154486fc1b0ed1771b8, type: 2}

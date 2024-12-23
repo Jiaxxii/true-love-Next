@@ -1,0 +1,28 @@
+﻿{
+  "rule map": {
+    "maps": [
+      {
+        "rule": "menu",
+        "scene": "menu"
+      }
+    ]
+  },
+  "character": [
+    {
+      "character code": "znm",
+      "body sprites": {
+        "all": false,
+        "sprites": [
+          "znm_1",
+          "znm_2"
+        ]
+      },
+      "face sprites code": {
+        "all": true,
+        "sprites": []
+      }
+    }
+  ],
+  "scene": {
+  }
+}

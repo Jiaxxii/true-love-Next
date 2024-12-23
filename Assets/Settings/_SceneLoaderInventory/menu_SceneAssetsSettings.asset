@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53815865d2af4c8ca7a2767d035a14f2, type: 3}
+  m_Name: menu_SceneAssetsSettings
+  m_EditorClassIdentifier: 
+  loaderMapInfo:
+    isAllMap: 1
+    mapLabelReference:
+      m_LabelString: rule_map_label
+    loaderMapItems:
+    - addressableName: rule000
+  bodyLabelReference:
+    m_LabelString: body_label
+  faceLabelReference:
+    m_LabelString: face_label
+  loaderCharacterInfo:
+  - characterCode: znm
+    characterLabelReference:
+      m_LabelString: znm_label
+    bodySpriteInfo:
+      allLoader: 1
+      resourceCode: []
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - znm_001

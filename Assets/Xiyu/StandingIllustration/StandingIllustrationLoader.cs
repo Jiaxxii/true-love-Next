@@ -1,91 +1,78 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Xiyu.StandingIllustration
 {
-    public sealed class StandingIllustrationLoader : IAsyncEnumerable<KeyValuePair<string, Sprite>>, IDisposable
+    public sealed class StandingIllustrationLoader
     {
-        private readonly ConcurrentDictionary<string, AsyncOperationHandle<Sprite>> _bufferMap = new();
+        public IProgress<float> Progress { get; private set; }
 
+        public string CharacterCode { get; private set; }
 
-        public async UniTask<Sprite> LoadStandingIllustrationAsync(string addressableName)
+        public StandingIllustrationLoader(string characterCode, IProgress<float> progress = null)
         {
-            _bufferMap.TryAdd(addressableName, Addressables.LoadAssetAsync<Sprite>(addressableName));
-
-            var asyncOperationHandle = _bufferMap[addressableName];
-            if (!asyncOperationHandle.IsDone || asyncOperationHandle.Status == AsyncOperationStatus.None)
-            {
-                await UniTask.NextFrame();
-            }
-
-            if (asyncOperationHandle.Status != AsyncOperationStatus.Succeeded)
-            {
-                throw new ArgumentException("资源加载失败！状态：" + asyncOperationHandle.Status);
-            }
-
-            return asyncOperationHandle.Result;
-        }
-
-        public async UniTask<IEnumerable<Sprite>> LoadStandingIllustrationAsync(IEnumerable<string> addressableNames)
-        {
-            return await UniTask.WhenAll(System.Linq.Enumerable.Select(addressableNames, LoadStandingIllustrationAsync));
+            CharacterCode = characterCode;
+            Progress = progress;
         }
 
 
-        public void ReleaseStandingIllustration(string addressableName)
+        private readonly ConcurrentDictionary<string, Sprite> _bufferMap = new();
+
+        public async UniTask<Sprite> LoadSpriteAsync(string addressableName)
         {
-            if (_bufferMap.TryRemove(addressableName, out var asyncOperationHandle))
+            if (_bufferMap.TryGetValue(addressableName, out var sprite))
             {
-                Addressables.Release(asyncOperationHandle);
+                return sprite;
+            }
+
+            var asyncOperationHandle = Addressables.LoadAssetAsync<Sprite>(addressableName);
+            _bufferMap.TryAdd(addressableName, await asyncOperationHandle.ToUniTask(Progress));
+
+            Addressables.Release(asyncOperationHandle);
+
+            return _bufferMap[addressableName];
+        }
+
+        public async UniTask PreloadSpritesAsync(string characterLabel, string bodyOrFaceLabel)
+        {
+            var loadResourceLocationsAsync =
+                Addressables.LoadResourceLocationsAsync(new List<string> { characterLabel, bodyOrFaceLabel }, Addressables.MergeMode.Intersection, typeof(Sprite));
+
+            await loadResourceLocationsAsync.ToUniTask();
+
+            var task = new List<UniTask>();
+            foreach (var resourceLocation in loadResourceLocationsAsync.Result)
+            {
+                if (_bufferMap.ContainsKey(resourceLocation.PrimaryKey))
+                    continue;
+
+                task.Add(LoadSpriteAsync(resourceLocation.PrimaryKey));
+            }
+
+            await UniTask.WhenAll(task);
+        }
+
+        public void Release(string addressableName)
+        {
+            if (_bufferMap.TryRemove(addressableName, out _))
+            {
             }
         }
 
-        public void ReleaseStandingIllustration(IEnumerable<string> addressableNames)
+        public void ReleaseAll()
         {
-            foreach (var addressableName in addressableNames)
-            {
-                ReleaseStandingIllustration(addressableName);
-            }
-        }
-
-        public void ReleaseAllStandingIllustration()
-        {
-            foreach (var asyncOperationHandle in _bufferMap.Values)
-            {
-                Addressables.Release(asyncOperationHandle);
-            }
-
             _bufferMap.Clear();
         }
 
-        public async IAsyncEnumerator<KeyValuePair<string, Sprite>> GetAsyncEnumerator(CancellationToken cancellationToken = new())
+        public static async UniTask<StandingIllustrationLoader> PreloadAsync(string characterCode, string characterLabel, string bodyOrFaceLabel, IProgress<float> progress = null)
         {
-            foreach (var (addressableName, asyncOperationHandle) in _bufferMap)
-            {
-                if (!asyncOperationHandle.IsDone || asyncOperationHandle.Status == AsyncOperationStatus.None)
-                {
-                    await UniTask.NextFrame();
-                }
-
-                if (asyncOperationHandle.Status != AsyncOperationStatus.Succeeded)
-                {
-                    throw new ArgumentException("资源加载失败！状态：" + asyncOperationHandle.Status);
-                }
-
-                yield return new KeyValuePair<string, Sprite>(addressableName, asyncOperationHandle.Result);
-            }
-        }
-
-        public void Dispose()
-        {
-            if (_bufferMap.Count == 0) return;
-            ReleaseAllStandingIllustration();
+            var loader = new StandingIllustrationLoader(characterCode, progress);
+            await loader.PreloadSpritesAsync(characterLabel, bodyOrFaceLabel);
+            return loader;
         }
     }
 }

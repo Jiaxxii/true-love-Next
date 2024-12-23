@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 62a98398f019b954c9a6a6446ac2153e
   m_currentHash:
     serializedVersion: 2
-    Hash: 55fece3405fdd9815b992e46525fcd10
+    Hash: c418034ae17461309433fdd428b06de1
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     m_Id: 
   m_RemoteCatalogLoadPath:
     m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1437f4989f7fe7448b98f614251dbc05, type: 2}
   - {fileID: 11400000, guid: a94e431fc3d66cc459d7744e7c46b968, type: 2}
   - {fileID: 11400000, guid: 9a96d18ab14a70445966bf49676a19d1, type: 2}
+  - {fileID: 11400000, guid: 58e30a5f53d554041a4a76a6599078c1, type: 2}
+  - {fileID: 11400000, guid: 4d672ce4a84df0d4b8b00c1412266c74, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -58,6 +60,20 @@ MonoBehaviour:
     - m_InheritedParent: 
       m_Id: 0e49cf5211d7f7d49b43742e500d6fc1
       m_ProfileName: Default
+      m_Values:
+      - m_Id: 857700e8a7f95fa4598aa3533b0fcc41
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: cdea18c0a2ff30044a10bd3af376cf94
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: ec526b7c5474a1340a30c65f30f36ae3
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 1aba461e42360b44ea404649bac514b4
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 5e85eae7cccfa1a4d91609ea100160f0
+        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+    - m_InheritedParent: 
+      m_Id: 8c5f5d88da8db2446bbc126f53540c67
+      m_ProfileName: New Profile
       m_Values:
       - m_Id: 857700e8a7f95fa4598aa3533b0fcc41
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
@@ -88,7 +104,16 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - default
+    - znm_label
+    - ai_shi_label
+    - fu_lun_label
+    - mo_wang_label
+    - xiao_deng_label
+    - you_zi_label
+    - rule_map_label
+    - body_label
+    - face_label
+    - body_offset_info
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 29fd04dd46b96054f86260634c8b9ed7, type: 2}

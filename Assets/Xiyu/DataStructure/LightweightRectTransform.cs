@@ -18,20 +18,23 @@ namespace Xiyu.DataStructure
         public Vector2 Pivot { get; }
         public Vector3 EulerAngle { get; }
         public Vector3 Scale { get; }
+
+
+        public static LightweightRectTransform Zero => new(Vector2.zero, Size.Zero, Vector2.zero, Vector3.zero, Vector3.one);
+
+        public static bool IsZero(LightweightRectTransform lrt) => lrt.Position == Vector2.zero && Size.IsZero(lrt.Size) && lrt.Pivot == Vector2.zero &&
+                                                                   lrt.EulerAngle == Vector3.zero && lrt.Scale == Vector3.zero;
     }
 
-    public readonly struct Size
+    public static class LightweightRectTransformExtensions
     {
-        public Size(float width, float height)
+        public static void Apply(this RectTransform rectTransform, LightweightRectTransform lrt)
         {
-            Width = width;
-            Height = height;
+            rectTransform.anchoredPosition = lrt.Position;
+            rectTransform.sizeDelta = lrt.Size;
+            rectTransform.pivot = lrt.Pivot;
+            rectTransform.localEulerAngles = lrt.EulerAngle;
+            rectTransform.localScale = lrt.Scale;
         }
-
-        public float Width { get; }
-        public float Height { get; }
-
-        public static implicit operator Vector2(Size size) => new(size.Width, size.Height);
-        public static implicit operator Vector3(Size size) => new(size.Width, size.Height, 0);
     }
 }
