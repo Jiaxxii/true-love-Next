@@ -87,7 +87,7 @@ namespace Xiyu.AssetLoader
 
             return false;
         }
- 
+
 
         private static bool TryParseCharacterGuideInfo(string json, out LoaderCharacterGuideInfo loaderCharacterGuideInfo)
         {
@@ -108,10 +108,6 @@ namespace Xiyu.AssetLoader
 
                 loaderCharacterGuideInfo = characterGuideInfo;
                 return true;
-            }
-            catch (JsonSerializationException)
-            {
-                return false;
             }
             catch (Exception e)
             {

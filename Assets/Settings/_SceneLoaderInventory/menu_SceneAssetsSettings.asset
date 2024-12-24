@@ -17,7 +17,7 @@ MonoBehaviour:
     mapLabelReference:
       m_LabelString: rule_map_label
     loaderMapItems:
-    - addressableName: rule000
+    - addressableName: rule061
   bodyLabelReference:
     m_LabelString: body_label
   faceLabelReference:

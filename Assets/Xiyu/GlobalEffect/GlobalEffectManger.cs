@@ -43,6 +43,21 @@ namespace Xiyu.GlobalEffect
             canvasGroup.interactable = active;
         }
 
+
+        /// <summary>
+        /// 将所有的效果设置为默认状态
+        /// <para>效果为：显示 Effect 为黑色背景，溶解值为 0（不溶解）</para>
+        /// </summary>
+        public void AllDefault()
+        {
+            SetTopActive(true);
+            MaskEffect.Alpha = 1;
+            MaskEffect.SetSprite = null;
+            MaskEffect.Strength = 0;
+            LoaderEffect.Alpha = 0;
+        }
+        
+
         private static GlobalEffectManger GetLazyInstance()
         {
             var loaderManager = FindObjectOfType<GlobalEffectManger>();

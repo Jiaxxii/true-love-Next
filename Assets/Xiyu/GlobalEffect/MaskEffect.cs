@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,12 +9,10 @@ namespace Xiyu.GlobalEffect
 {
     public sealed class MaskEffect : MonoBehaviour
     {
-        private static readonly Dictionary<string, ResourceRequest> Buffer = new();
-
         [SerializeField] private Image effectImage;
-        private static readonly int ShaderPropertyIDStrength = Shader.PropertyToID("Strength");
-        private static readonly int ShaderPropertyIDRuleTexture = Shader.PropertyToID("Rule");
-        private static readonly int ShaderPropertyIDSmooth = Shader.PropertyToID("Smooth");
+        private static readonly int ShaderPropertyIDStrength = Shader.PropertyToID("_Strength");
+        private static readonly int ShaderPropertyIDRuleTexture = Shader.PropertyToID("_Rule");
+        private static readonly int ShaderPropertyIDSmooth = Shader.PropertyToID("_Smooth");
 
         private Tween _tweenStrength;
         private Tween _tweenAlpha;
@@ -69,23 +68,15 @@ namespace Xiyu.GlobalEffect
         /// <summary>
         /// 设置遮罩的纹理 （rule001...rule133）
         /// </summary>
-        /// <param name="resourcesRuleName"></param>
+        /// <param name="sprite"></param>
         /// <returns></returns>
-        public async UniTask<Sprite> SetRuleSprite(string resourcesRuleName)
+        public Sprite SetRuleSprite([CanBeNull] Sprite sprite)
         {
-            if (!Buffer.ContainsKey(resourcesRuleName))
+            if (sprite == null)
             {
-                Buffer.Add(resourcesRuleName, Resources.LoadAsync<Sprite>($"rule/{resourcesRuleName}"));
+                effectImage.material.SetTexture(ShaderPropertyIDRuleTexture, null);
+                return null;
             }
-
-            var resourceRequest = Buffer[resourcesRuleName];
-
-            while (!resourceRequest.isDone)
-            {
-                await UniTask.NextFrame();
-            }
-
-            var sprite = (Sprite)resourceRequest.asset;
 
             effectImage.material.SetTexture(ShaderPropertyIDRuleTexture, sprite.texture);
 

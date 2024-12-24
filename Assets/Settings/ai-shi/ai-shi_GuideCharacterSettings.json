@@ -1,7 +1,8 @@
 ﻿{
-  "DefaultCharacterCode": "ai-shi_a_0_1428",
-  "DefaultEmotionCode": "ai-shi_001",
-  "DefaultTransform": {
+  "CharacterCode": "znm",
+  "BodyCode": "znm_a_0_1475",
+  "EmotionCode": "znm_001",
+  "Transform": {
     "Position": {
       "x": 0.0,
       "y": 0.0
@@ -25,20 +26,10 @@
     }
   },
   "OptionSelected": {
-    "FirstEncounter": {
-      "Emotion": "未定义-生气（可选）"
-    },
-    "AtThisTime": {
-      "Emotion": "未定义-微笑（可选）"
-    },
-    "AtThatTime": {
-      "Emotion": "未定义-疑惑（可选）"
-    },
-    "Examination": {
-      "Emotion": "未定义-期待（可选）"
-    },
-    "Conclusion": {
-      "Emotion": "未定义-担心（必选）"
-    }
+    "FirstEncounter": "未定义-生气（可选）",
+    "AtThisTime": "未定义-微笑（可选）",
+    "AtThatTime": "未定义-疑惑（可选）",
+    "Examination": "未定义-期待（可选）",
+    "Conclusion": "未定义-担心（必选）"
   }
 }

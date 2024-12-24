@@ -14,6 +14,9 @@ namespace Xiyu.AssetLoader
     {
         private ConcurrentDictionary<string, EmotionInfoItem[]> _buffer = new();
 
+        /// <summary>
+        /// 原始资源名称 xx_EmotionsSettings
+        /// </summary>
         public string AddressableName { get; private set; }
         public string CharacterCode { get; private set; }
 

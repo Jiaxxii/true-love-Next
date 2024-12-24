@@ -37,6 +37,23 @@ namespace Xiyu.StandingIllustration
             return _bufferMap[addressableName];
         }
 
+        public async UniTask LoadSpriteAsync(string addressableName, Action<Sprite> onCompleted)
+        {
+            if (_bufferMap.TryGetValue(addressableName, out var sprite))
+            {
+                onCompleted?.Invoke(sprite);
+                return;
+            }
+
+            var asyncOperationHandle = Addressables.LoadAssetAsync<Sprite>(addressableName);
+            _bufferMap.TryAdd(addressableName, await asyncOperationHandle.ToUniTask(Progress));
+
+            Addressables.Release(asyncOperationHandle);
+
+            onCompleted?.Invoke(_bufferMap[addressableName]);
+        }
+
+
         public async UniTask PreloadSpritesAsync(string characterLabel, string bodyOrFaceLabel)
         {
             var loadResourceLocationsAsync =

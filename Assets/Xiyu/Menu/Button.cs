@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Xiyu.AntiShake;
 
 namespace Xiyu.Menu
 {
@@ -18,12 +19,17 @@ namespace Xiyu.Menu
 
         [SerializeField] protected float animationDuration = 0.2f;
         [SerializeField] protected float animationScale = 0.2f;
+        [SerializeField] protected float protectionTime = 0.2f;
+
 
         [JetBrains.Annotations.PublicAPI] public event UnityAction<PointerEventData> OnPointerEnterAction;
         [JetBrains.Annotations.PublicAPI] public event UnityAction<PointerEventData> OnPointerClickAction;
         [JetBrains.Annotations.PublicAPI] public event UnityAction<PointerEventData> OnPointerExitAction;
 
         private float _startAlpha = -1, _textStartAlpha;
+
+        private readonly AntiShakeManager _antiShakeManager = new();
+        private int _queryId;
 
 
         [JetBrains.Annotations.PublicAPI]
@@ -53,6 +59,7 @@ namespace Xiyu.Menu
             {
                 _startAlpha = buttonImage.color.a;
                 _textStartAlpha = textMeshProUGUI.alpha;
+                _queryId = _antiShakeManager.Record(GetInstanceID(), (int)(protectionTime * 1000));
             }
 
             SetInteractable(isInteractable);
@@ -75,18 +82,21 @@ namespace Xiyu.Menu
                 UnderlayDilate = 1;
                 GlowPower = 0.2F;
             });
-            DOTween.To(() => GlowPower, x => GlowPower = x, 0.2F, animationDuration).SetEase(Ease.Linear);
-
-
-            OnOnPointerEnterActionInvoke(eventData);
+            DOTween.To(() => GlowPower, x => GlowPower = x, 0.2F, animationDuration)
+                .SetEase(Ease.Linear)
+                .OnComplete(() => OnOnPointerEnterActionInvoke(eventData));
         }
 
         public virtual void OnPointerClick(PointerEventData eventData)
         {
-            if (isInteractable)
+            if (!isInteractable)
             {
                 return;
             }
+
+            if (!_antiShakeManager.Query(_queryId))
+                return;
+
 
             OnOnPointerClickActionInvoke(eventData);
         }
