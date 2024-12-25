@@ -44,6 +44,11 @@ namespace Editor
                 AssetDatabase.SaveAssets();
             }
 
+            if (!string.IsNullOrEmpty(_characterCode) && GUILayout.Button("拷贝身体信息"))
+            {
+                CopyBodyOffsetToJson(_root);
+            }
+
 
             if (!GUILayout.Button("保存立绘偏移信息"))
             {
@@ -55,6 +60,32 @@ namespace Editor
             AssetDatabase.SaveAssets();
         }
 
+
+        private void CopyBodyOffsetToJson(Transform root)
+        {
+            if (root is not RectTransform rect)
+            {
+                throw new InvalidCastException($"根节点不是(\"{root.gameObject.name}\")RectTransform类型");
+            }
+
+            var lrt = new
+            {
+                Position = new { rect.anchoredPosition.x, rect.anchoredPosition.y },
+                Size = new { Width = rect.sizeDelta.x, Height = rect.sizeDelta.y },
+                Pivot = new { rect.pivot.x, rect.pivot.y },
+                EulerAngles = new { rect.eulerAngles.x, rect.eulerAngles.y, rect.eulerAngles.z },
+                Scale = new { rect.localScale.x, rect.localScale.y }
+            };
+
+            var jsonContent = JsonConvert.SerializeObject(lrt, Formatting.Indented);
+
+            GUIUtility.systemCopyBuffer = $"\"{_characterCode}\":{jsonContent}";
+
+            Debug.Log($"\"{_characterCode}\" 身体信息已拷贝到剪贴板");
+
+            _root = null;
+            _characterCode = string.Empty;
+        }
 
         private void BodyOffsetSaveToJson(Transform root)
         {

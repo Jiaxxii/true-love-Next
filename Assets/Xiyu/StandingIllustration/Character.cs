@@ -12,7 +12,6 @@ namespace Xiyu.StandingIllustration
     public sealed class Character : MonoBehaviour
     {
         private CanvasGroup _baseCanvasGroup;
-        private RectTransform _root;
         private Image _bodyImage;
         private readonly List<Image> _faceImages = new();
 
@@ -36,11 +35,13 @@ namespace Xiyu.StandingIllustration
         public string AddressableName { get; private set; }
         public string CharacterCode { get; private set; }
 
+        public RectTransform Root { get; private set; }
+
         private UniTask InitAsync(string addressableName)
         {
             _baseCanvasGroup = GetComponent<CanvasGroup>();
             _bodyImage = transform.Find("Body").GetComponent<Image>();
-            _root = (RectTransform)transform;
+            Root = (RectTransform)transform;
 
             CharacterCode = AddressableName = addressableName;
 
@@ -49,7 +50,7 @@ namespace Xiyu.StandingIllustration
 
         public void SetAnchoredPosition(Vector2 anchoredPosition)
         {
-            _root.anchoredPosition = anchoredPosition;
+            Root.anchoredPosition = anchoredPosition;
         }
 
         /// <summary>
@@ -66,7 +67,8 @@ namespace Xiyu.StandingIllustration
 
         public void UpdateBody(Sprite sprite, LightweightRectTransform lrt)
         {
-            _root.sizeDelta = lrt.Size;
+            Root.sizeDelta = new Vector2(lrt.Size.Width * lrt.Scale.x, lrt.Size.Height * lrt.Scale.y);
+
             _bodyImage.sprite = sprite;
             _bodyImage.rectTransform.Apply(lrt);
         }
@@ -76,7 +78,7 @@ namespace Xiyu.StandingIllustration
             _bodyImage.DOKill();
             await _bodyImage.DOFade(0.2f, duration).AsyncWaitForCompletion().AsUniTask();
 
-            _root.sizeDelta = lrt.Size;
+            Root.sizeDelta = lrt.Size;
             _bodyImage.sprite = sprite;
             _bodyImage.rectTransform.Apply(lrt);
 
@@ -141,7 +143,7 @@ namespace Xiyu.StandingIllustration
                 for (var i = 0; i < count; i++)
                 {
                     var faceImage = new GameObject("Face-item").AddComponent<Image>();
-                    faceImage.transform.SetParent(transform);
+                    faceImage.transform.SetParent(transform, false);
                     _faceImages.Add(faceImage);
                 }
             }
@@ -158,8 +160,11 @@ namespace Xiyu.StandingIllustration
 
         private void OnDestroy()
         {
+            _bodyImage.DOKill();
+            _bodyImage.sprite = null;
             foreach (var faceImage in _faceImages)
             {
+                faceImage.DOKill();
                 faceImage.sprite = null;
             }
 

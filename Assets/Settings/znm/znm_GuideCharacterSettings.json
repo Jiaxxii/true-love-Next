@@ -1,14 +1,11 @@
 ﻿{
-  "DefaultCharacterCode": "znm_a_0_1465",
-  "DefaultEmotionCode": "znm_001",
-  "DefaultTransform": {
+  "CharacterCode": "znm",
+  "BodyCode": "znm_a_0_1465",
+  "EmotionCode": "znm_001",
+  "Transform": {
     "Position": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "Size": {
-      "Width": 1416.0,
-      "Height": 3215.042
+      "x": -429,
+      "y": -962
     },
     "Pivot": {
       "x": 0.5,
@@ -25,20 +22,10 @@
     }
   },
   "OptionSelected": {
-    "FirstEncounter": {
-      "Emotion": "未定义-生气（可选）"
-    },
-    "AtThisTime": {
-      "Emotion": "未定义-微笑（可选）"
-    },
-    "AtThatTime": {
-      "Emotion": "未定义-疑惑（可选）"
-    },
-    "Examination": {
-      "Emotion": "未定义-期待（可选）"
-    },
-    "Conclusion": {
-      "Emotion": "未定义-担心（必选）"
-    }
+    "FirstEncounter": "znm_003",
+    "AtThisTime": "znm_004",
+    "AtThatTime": "znm_006",
+    "Examination": "znm_005",
+    "Conclusion": "znm_002"
   }
 }

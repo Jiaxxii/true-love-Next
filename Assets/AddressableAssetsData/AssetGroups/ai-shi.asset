@@ -1,0 +1,578 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ai-shi
+  m_EditorClassIdentifier: 
+  m_GroupName: ai-shi
+  m_Data:
+    m_SerializedData: []
+  m_GUID: af4f0457b6b893b45b6a659366bc4f96
+  m_SerializeEntries:
+  - m_GUID: 5cc48294f60ff1e4b89fddcb0ea88ac3
+    m_Address: ai-shi_a_0_1428
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0df2fc7f93667494c864d18e6af9f397
+    m_Address: ai-shi_a_0_1185
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28ea600b04e356d4494af7fb8ab589db
+    m_Address: ai-shi_a_0_1213
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2fce07ec3babcde4dbcc6671437084e9
+    m_Address: ai-shi_a_0_1241
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bae2bdaee65cd14fa63d0a2d4a65841
+    m_Address: ai-shi_a_0_1255
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c52f2810bbcd8c14b961a85d58cc1f7a
+    m_Address: ai-shi_a_0_1257
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75b1da070391d894180f40a8a12ed828
+    m_Address: ai-shi_a_0_1282
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3befa1c0b58d97c44ae435eec7519cf1
+    m_Address: ai-shi_a_0_1310
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b60f544b6f6ad964f9057365a0df747f
+    m_Address: ai-shi_a_0_1340
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56981086487030d4f93813b390985d4c
+    m_Address: ai-shi_a_0_1373
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 744d266d3d2c8574782a8ad4904e9c06
+    m_Address: ai-shi_a_0_1405
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e38db69d47098142b83e229d890d161
+    m_Address: ai-shi_a_0_1426
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2dc77549ca2b1df449e39decfcb37b50
+    m_Address: ai-shi_a_0_1430
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 957338c890c83a34fa9e28e85342ce88
+    m_Address: ai-shi_a_0_1432
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 966a45d1617c7614f882ed083d03a070
+    m_Address: ai-shi_a_0_1445
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa83762560052f847a9bf5e98ad06822
+    m_Address: ai-shi_a_0_1447
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 680c5e5be8f8a6447be90e0a774463fa
+    m_Address: ai-shi_a_0_1448
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 432859d218af02848adf583ebd9b52d3
+    m_Address: ai-shi_a_0_1451
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c93005da611e1f4ba3714573b5efa34
+    m_Address: ai-shi_a_0_1452
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e05db143c5bab5f4d896ab737419b0cd
+    m_Address: ai-shi_a_0_1453
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc0008289b000214aa358ec5dec078b9
+    m_Address: ai-shi_a_0_1456
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5aa291c77ed7ecd49b37117821fa5253
+    m_Address: ai-shi_a_0_1457
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d50f78603d14e84198ccf0f66da2764
+    m_Address: ai-shi_a_0_1458
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25202f4abd128c84c8e7bd9db586532e
+    m_Address: ai-shi_a_0_1461
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2410ab84be1d1c40866a80a4f3f9f06
+    m_Address: ai-shi_a_0_1462
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b78977b29f7429d4db503542186ba47d
+    m_Address: ai-shi_a_0_1463
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a317b6914562b547b6f85cc05286c4e
+    m_Address: ai-shi_a_0_1464
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc586f48860d0de4ba665c45d35e1854
+    m_Address: ai-shi_a_0_1465
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea206eedf1130c74cbaf95831506e341
+    m_Address: ai-shi_a_0_1466
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f67d741d9557a2c4daa6f9b982310b2d
+    m_Address: ai-shi_a_0_1467
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1a56a1afb2e5614a8e4a3fd411526eb
+    m_Address: ai-shi_a_0_1468
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9d17a6614a40f8409c875e03fde86fc
+    m_Address: ai-shi_a_0_1469
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f01b7ad7c4acd8a40a69c8e06e94deef
+    m_Address: ai-shi_a_0_1470
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bba9ccc9e19417a449fa4ee93a288bf1
+    m_Address: ai-shi_a_0_1471
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df28b734cf8925e4f8c8dfa27a76a2cd
+    m_Address: ai-shi_a_0_1472
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a3c44fb967ba43439a16094f4ed6ab1
+    m_Address: ai-shi_a_0_1473
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68a7995378ffcb649b2611f9c700f8ce
+    m_Address: ai-shi_a_0_1474
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cae210be9bfb134ba3ad711b4704501
+    m_Address: ai-shi_a_0_1475
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89410b54bfd58c6409dc16ca495dc93c
+    m_Address: ai-shi_a_0_1476
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f84ea67f95ee11c44928b8bde0f12e4f
+    m_Address: ai-shi_c_0_3890
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06108f79ac8d08a4683c78ac942b5bdd
+    m_Address: ai-shi_c_0_3921
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1374467e96c27ce4b920a39c47c19600
+    m_Address: ai-shi_c_0_3958
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3769a9cf26afd5a4897b69402122091f
+    m_Address: ai-shi_c_0_3962
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02554093107fd4d4fa02ae96def73f99
+    m_Address: ai-shi_c_0_3990
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ba0d941cf57cce48b950f5aa0cd3cf1
+    m_Address: ai-shi_c_0_4019
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47c1213a74c23af46842091e1adb281d
+    m_Address: ai-shi_c_0_4049
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4742d342122fad43bce234168a924f5
+    m_Address: ai-shi_c_0_4085
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82a77543b7d1c4c4d916d4fbd9b2afa2
+    m_Address: ai-shi_c_0_4126
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c2248a4871721c409b5693f7c7d0261
+    m_Address: ai-shi_c_0_4157
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48ac48f23f94f044e877f4b1a319736e
+    m_Address: ai-shi_c_0_4530
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9323ec9f594119c45ac34fbd88e96698
+    m_Address: ai-shi_c_0_4534
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45592e0e3c2c09948a85bdb92171d368
+    m_Address: ai-shi_c_0_4538
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 642890471de1b1a4baa6611329b934f7
+    m_Address: ai-shi_c_0_4542
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9969845a83cdbc478d1b58a11fe26b1
+    m_Address: ai-shi_c_0_4551
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc4b7e7db2fbf6e4498d2abaa851da68
+    m_Address: ai-shi_c_0_4583
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65080a5953bcf2e4991bf01e20e5cae7
+    m_Address: ai-shi_c_0_4586
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4b5820e7d887d84ebe1f93bdfa084a4
+    m_Address: ai-shi_c_0_4587
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58540f3e57b903f48a11a4dd00740153
+    m_Address: ai-shi_c_0_4594
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03e55d0d64d42124897d55f010611fd3
+    m_Address: ai-shi_c_0_4599
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65c1ec6d3bb1ede40b66562545a9432f
+    m_Address: ai-shi_c_0_4600
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 274708ecc0fc06c47ac5297a5ab3ac95
+    m_Address: ai-shi_c_0_4601
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be523e716a8486f4abfd2c7ce0df1a8a
+    m_Address: ai-shi_c_0_4605
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22adb461a60ac9241990fccd7c267e98
+    m_Address: ai-shi_c_0_4606
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b8b12fec0f4d38429768bc00f77a486
+    m_Address: ai-shi_c_0_4609
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b5550f11ddd6214fb6e55e0d40c64c4
+    m_Address: ai-shi_c_0_4610
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90f3ee3929e7de645883b4651e56ee08
+    m_Address: ai-shi_c_0_4611
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86eab7fc86d18f747b5c935ecf19f402
+    m_Address: ai-shi_c_0_4612
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 055de55bc10eb714796215325efcc8b3
+    m_Address: ai-shi_c_0_4614
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e45db285ad9a1944a45c6d704efb628
+    m_Address: ai-shi_c_0_4615
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fba79c9305cd3f54995b44c4623b0176
+    m_Address: ai-shi_c_0_4617
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 105b5a0ab97932e41a2643c91a0f5756
+    m_Address: ai-shi_c_0_4618
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2091f96dc8686e45aa8c6ab1b175bc7
+    m_Address: ai-shi_c_0_4619
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12fa1f2fa3e31524daebe0931897fe88
+    m_Address: ai-shi_c_0_4620
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98f879b8f6f44dc4abf780134dbcc44c
+    m_Address: ai-shi_c_0_4621
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 057826ab88e6e3d45bcf0f906bd4d610
+    m_Address: ai-shi_c_0_4622
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0062008cb682254499bfdbc6efcf7793
+    m_Address: ai-shi_c_0_4623
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4d894a050844f249892683f97a9f1bd
+    m_Address: ai-shi_c_0_4624
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a01770d103d307b4db2e232b15c961fd
+    m_Address: ai-shi_c_0_4625
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef1edc40c7230314e9ef4eda1500508b
+    m_Address: ai-shi_c_0_4626
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - znm_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 41d65a0a4853182489d9ee85d11ea088, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 876e91f54ac68ba4680e8165ee81b0fe, type: 2}
+    - {fileID: 11400000, guid: 0af6c362034d4aa40a1b773bfb044a51, type: 2}

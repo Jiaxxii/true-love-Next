@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: fu-lun
+  m_EditorClassIdentifier: 
+  m_GroupName: fu-lun
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ec50cbd658469b34aa01cc2cafe10457
+  m_SerializeEntries:
+  - m_GUID: eee03a86fd3a9d5449ca3c557a34923d
+    m_Address: fu-lun_1_0_291
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4db4ddee1c0ace443ae8f779eeaf2c38
+    m_Address: fu-lun_1_0_299
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 466e0e692b4bb194ab755bd7c478e868
+    m_Address: fu-lun_1_0_300
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2620f7586d40a6744ab0dc6223d610e2
+    m_Address: fu-lun_1_0_301
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 838e8bf65e59cfd43bca218a70f211b3
+    m_Address: fu-lun_1_0_302
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 377b6152422dc0441b5959209c0d68a8
+    m_Address: fu-lun_1_0_315
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e03fec3a8718fd4ab90163bc84c53a4
+    m_Address: fu-lun_1_0_316
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ff7f983db308904cb4bda5fc12d805c
+    m_Address: fu-lun_1_0_317
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - fu_lun_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 41d65a0a4853182489d9ee85d11ea088, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8e372aedc7bcaaf458c8852bab01c062, type: 2}
+    - {fileID: 11400000, guid: d0b5918fee9b9144bae681f6b6974590, type: 2}

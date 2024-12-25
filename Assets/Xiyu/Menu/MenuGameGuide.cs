@@ -3,7 +3,9 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using ScriptableObjectSettings;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using Xiyu.AssetLoader;
 using Xiyu.DataStructure;
 using Xiyu.GlobalEffect;
@@ -14,19 +16,33 @@ namespace Xiyu.Menu
     public sealed class MenuGameGuide : MonoBehaviour
     {
         [SerializeField] private Transform panel;
+        [SerializeField] private AssetLabelReference defaultCharacterLabelReference;
+        [SerializeField] private AssetLabelReference defaultGuideLabelReference;
         [SerializeField] private SceneAssetsSettings menuSceneAssetsSettings;
 
         [SerializeField] private float duration = 0.5f;
 
 
+        // ReSharper disable RedundantNameQualifier
         [SerializeField] private Xiyu.Menu.Button firstEncounterButton;
         [SerializeField] private Xiyu.Menu.Button atThisTimeButton;
         [SerializeField] private Xiyu.Menu.Button atThatTimeButton;
         [SerializeField] private Xiyu.Menu.Button examinationButton;
         [SerializeField] private Xiyu.Menu.Button conclusionButton;
+        // ReSharper restore RedundantNameQualifier
 
         private Character _currentCharacter;
         private string _lastEmotionCode;
+
+
+        private void Awake()
+        {
+            firstEncounterButton.OnPointerClickAction += _ =>
+            {
+                Addressables.ReleaseInstance(_currentCharacter.gameObject);
+                SceneManager.LoadSceneAsync("Select");
+            };
+        }
 
         private async void Start()
         {
@@ -38,7 +54,7 @@ namespace Xiyu.Menu
             globalEffectManger.LoaderEffect.Loading();
 
             // 由于菜单场景需要角色引导信息这个是动态的，我们需要实时解析
-            var guideInfo = await CharacterGuideManager.LoadCharacterGuideInfoAsync();
+            var guideInfo = await CharacterMenuGuideManager.LoadCharacterMenuGuideInfoAsync(defaultGuideLabelReference.labelString, defaultCharacterLabelReference.labelString);
 
 
             // 加载角色立绘偏移信息与表情信息

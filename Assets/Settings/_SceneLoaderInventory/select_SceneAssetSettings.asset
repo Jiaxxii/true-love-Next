@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53815865d2af4c8ca7a2767d035a14f2, type: 3}
+  m_Name: select_SceneAssetSettings
+  m_EditorClassIdentifier: 
+  loaderMapInfo:
+    isAllMap: 0
+    mapLabelReference:
+      m_LabelString: rule_map_label
+    loaderMapItems:
+    - addressableName: rule044
+  bodyLabelReference:
+    m_LabelString: body_label
+  faceLabelReference:
+    m_LabelString: face_label
+  loaderCharacterInfo:
+  - characterCode: znm
+    characterLabelReference:
+      m_LabelString: znm_label
+    isLoadGuide: 0
+    bodySpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - znm_b_0_5462
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - znm_007
+  - characterCode: ai-shi
+    characterLabelReference:
+      m_LabelString: ai_shi_label
+    isLoadGuide: 0
+    bodySpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - ai-shi_c_0_4534
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - ai-shi_002
+  - characterCode: fu-lun
+    characterLabelReference:
+      m_LabelString: fu_lun_label
+    isLoadGuide: 0
+    bodySpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - fu-lun_1_0_291
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - fu-lun_001
+  - characterCode: mo-wang
+    characterLabelReference:
+      m_LabelString: mo_wang_label
+    isLoadGuide: 0
+    bodySpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - mo-wang_1_0_544
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - mo-wang_001
+  - characterCode: xiao-deng
+    characterLabelReference:
+      m_LabelString: xiao_deng_label
+    isLoadGuide: 0
+    bodySpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - xiao-deng_1_0_157
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - xiao-deng_001
+  - characterCode: you-zi
+    characterLabelReference:
+      m_LabelString: you_zi_label
+    isLoadGuide: 0
+    bodySpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - you-zi_a_0_1038
+    faceSpriteInfo:
+      allLoader: 0
+      resourceCode:
+      - you-zi_001

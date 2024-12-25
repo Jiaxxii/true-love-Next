@@ -48,7 +48,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5ccee2a1573ad80468e6f94b0884d7b6
-    m_Address: DefaultGuideCharacterSettings
+    m_Address: SelectSceneCharacterShowPosition
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

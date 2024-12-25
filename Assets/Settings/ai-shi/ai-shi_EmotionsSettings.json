@@ -1,108 +1,214 @@
 ﻿{
-"ai-shi_001":[
-  {
-    "AddressableName": "ai-shi_a_0_1447",
-    "Transform": {
-      "Position": {
-        "x": 16.1,
-        "y": 1346.1
-      },
-      "Size": {
-        "Width": 400.0,
-        "Height": 73.0
-      },
-      "Pivot": {
-        "x": 0.5,
-        "y": 0.5
-      },
-      "EulerAngles": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "Scale": {
-        "x": 1.0,
-        "y": 1.0
+  "ai-shi_001": [
+    {
+      "AddressableName": "ai-shi_a_0_1447",
+      "Transform": {
+        "Position": {
+          "x": 16.1,
+          "y": 1346.1
+        },
+        "Size": {
+          "Width": 400.0,
+          "Height": 73.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "AddressableName": "ai-shi_a_0_1185",
+      "Transform": {
+        "Position": {
+          "x": 16.4,
+          "y": 1230.0
+        },
+        "Size": {
+          "Width": 453.0,
+          "Height": 173.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "AddressableName": "ai-shi_a_0_1445",
+      "Transform": {
+        "Position": {
+          "x": 8.4,
+          "y": 1160.7
+        },
+        "Size": {
+          "Width": 338.0,
+          "Height": 138.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "AddressableName": "ai-shi_a_0_1453",
+      "Transform": {
+        "Position": {
+          "x": 9.5,
+          "y": 1097.8
+        },
+        "Size": {
+          "Width": 73.0,
+          "Height": 40.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
       }
     }
-  },
-  {
-    "AddressableName": "ai-shi_a_0_1185",
-    "Transform": {
-      "Position": {
-        "x": 16.4,
-        "y": 1230.0
-      },
-      "Size": {
-        "Width": 453.0,
-        "Height": 173.0
-      },
-      "Pivot": {
-        "x": 0.5,
-        "y": 0.5
-      },
-      "EulerAngles": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "Scale": {
-        "x": 1.0,
-        "y": 1.0
+  ],
+  "ai-shi_002": [
+    {
+      "AddressableName": "ai-shi_c_0_4586",
+      "Transform": {
+        "Position": {
+          "x": -2.3,
+          "y": 1337.8
+        },
+        "Size": {
+          "Width": 394.0,
+          "Height": 150.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "AddressableName": "ai-shi_c_0_3890",
+      "Transform": {
+        "Position": {
+          "x": 14.5,
+          "y": 1230.0
+        },
+        "Size": {
+          "Width": 402.0,
+          "Height": 200.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "AddressableName": "ai-shi_c_0_4551",
+      "Transform": {
+        "Position": {
+          "x": 16.0,
+          "y": 1153.3
+        },
+        "Size": {
+          "Width": 344.0,
+          "Height": 215.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
+      }
+    },
+    {
+      "AddressableName": "ai-shi_c_0_4614",
+      "Transform": {
+        "Position": {
+          "x": 6.7,
+          "y": 1090.1
+        },
+        "Size": {
+          "Width": 78.0,
+          "Height": 56.0
+        },
+        "Pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "EulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0
+        }
       }
     }
-  },
-  {
-    "AddressableName": "ai-shi_a_0_1445",
-    "Transform": {
-      "Position": {
-        "x": 8.4,
-        "y": 1160.7
-      },
-      "Size": {
-        "Width": 338.0,
-        "Height": 138.0
-      },
-      "Pivot": {
-        "x": 0.5,
-        "y": 0.5
-      },
-      "EulerAngles": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "Scale": {
-        "x": 1.0,
-        "y": 1.0
-      }
-    }
-  },
-  {
-    "AddressableName": "ai-shi_a_0_1453",
-    "Transform": {
-      "Position": {
-        "x": 9.5,
-        "y": 1097.8
-      },
-      "Size": {
-        "Width": 73.0,
-        "Height": 40.0
-      },
-      "Pivot": {
-        "x": 0.5,
-        "y": 0.5
-      },
-      "EulerAngles": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "Scale": {
-        "x": 1.0,
-        "y": 1.0
-      }
-    }
-  }
-]
+  ]
 }

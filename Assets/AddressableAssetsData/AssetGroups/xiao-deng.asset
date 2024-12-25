@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: xiao-deng
+  m_EditorClassIdentifier: 
+  m_GroupName: xiao-deng
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cfa0171d98775444da6ef58e0ae134f4
+  m_SerializeEntries:
+  - m_GUID: 9f2eb235f983ac54d90c4ab2aebb6ab3
+    m_Address: xiao-deng_1_0_156
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f71c51c2823bf6741a75c5e52e15ae79
+    m_Address: xiao-deng_1_0_157
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - body_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0b588ef9939a9044875b2da2012de0a
+    m_Address: xiao-deng_1_0_196
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71a55d58fa69bd44cb75d737623b522c
+    m_Address: xiao-deng_1_0_215
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 561791901059a8046bccf1b2890c4349
+    m_Address: xiao-deng_1_0_216
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c111c2276fc3f784fb812c7bc370c4bd
+    m_Address: xiao-deng_1_0_217
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0110287a0cfc4eb4682bcca7d2ca5d74
+    m_Address: xiao-deng_1_0_218
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df386b0c43466514bae9e077f33aaeb1
+    m_Address: xiao-deng_1_0_219
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57b4670668f06564594cc7404eaa5022
+    m_Address: xiao-deng_1_0_220
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 136184d724118ec43b05a832245e1608
+    m_Address: xiao-deng_1_0_221
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 771a06abef513524095145a8e9d3a5eb
+    m_Address: xiao-deng_1_0_222
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5afc2ce719f47cc4ea84f989b9fa8474
+    m_Address: xiao-deng_1_0_223
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6419098bbf7d948448dd33aa62ca853e
+    m_Address: xiao-deng_1_0_224
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acd87069fd9384945a997220dbaea7bf
+    m_Address: xiao-deng_1_0_225
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bec774779d259104ba55c48565f99b76
+    m_Address: xiao-deng_1_0_226
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63eefd9bbc1a0994eabf3da4bad80013
+    m_Address: xiao-deng_1_0_227
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e15061df87d1714ca9730ad6940e9ea
+    m_Address: xiao-deng_1_0_228
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68e10494dbf048046aca4fb1a79acfdb
+    m_Address: xiao-deng_1_0_229
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - face_label
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4322af613e81284aabfe14e6e349c03
+    m_Address: Assets/Settings/xiao-deng/xiao-deng_GuideCharacterSettings.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - xiao_deng_label
+    - guide_label
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 41d65a0a4853182489d9ee85d11ea088, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: cfa79aa05690b1c449bbf32de4ef7242, type: 2}
+    - {fileID: 11400000, guid: 6500ffbd4af48354fbd4e809038d02d0, type: 2}

@@ -1,15 +1,11 @@
 ﻿{
-  "CharacterCode": "znm",
-  "BodyCode": "znm_a_0_1475",
-  "EmotionCode": "znm_001",
+  "CharacterCode": "ai-shi",
+  "BodyCode": "ai-shi_a_0_1428",
+  "EmotionCode": "ai-shi_001",
   "Transform": {
     "Position": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "Size": {
-      "Width": 1689.0,
-      "Height": 3348.569
+      "x": -429,
+      "y": -962
     },
     "Pivot": {
       "x": 0.5,
@@ -26,10 +22,10 @@
     }
   },
   "OptionSelected": {
-    "FirstEncounter": "未定义-生气（可选）",
-    "AtThisTime": "未定义-微笑（可选）",
-    "AtThatTime": "未定义-疑惑（可选）",
-    "Examination": "未定义-期待（可选）",
-    "Conclusion": "未定义-担心（必选）"
+    "FirstEncounter": "未定义-",
+    "AtThisTime": "未定义-",
+    "AtThatTime": "未定义-",
+    "Examination": "未定义-",
+    "Conclusion": "未定义-"
   }
 }
