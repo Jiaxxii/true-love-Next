@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 192
+  controlID: 128
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 84
+  controlID: 26
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -661,9 +661,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -8.289569, y: -0.27640784, z: -0.5091948}
+    m_Target: {x: -2.0387344, y: -1.1218972, z: -0.51873994}
     speed: 2
-    m_Value: {x: -8.289569, y: -0.27640784, z: -0.5091948}
+    m_Value: {x: -2.0387344, y: -1.1218972, z: -0.51873994}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -713,9 +713,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.310693
+    m_Target: 10.265198
     speed: 2
-    m_Value: 9.310693
+    m_Value: 10.265198
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -779,9 +779,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f47e0000
+      m_SelectedIDs: c27a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: ea53feffbe59feffd699feffeca2feff22a5feff7aaffeff9e16ffffd022ffffec29ffffd031ffff783cffff6848ffff04b0ffff70baffff0ce2ffff7af9ffffba7f0000c47f00007a8f0000a48f000006900000
+      m_ExpandedIDs: 04fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -850,7 +850,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Images/Character
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -858,16 +858,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Images/Character
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Unity\TuanJie\_Generation\true-live Next
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 627e0000
-    m_LastClickedID: 32354
-    m_ExpandedIDs: 00000000c67a0000c87a0000ca7a0000cc7a0000ce7a0000d07a0000d27a0000547e00007a7e000000ca9a3b
+    m_SelectedIDs: c27a0000
+    m_LastClickedID: 31426
+    m_ExpandedIDs: 00000000907a0000927a0000947a0000967a0000987a00009a7a00009c7a00009e7a0000c27a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -895,7 +895,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c67a0000c87a0000ca7a0000cc7a0000ce7a0000d07a0000d27a0000
+    m_ExpandedIDs: 00000000907a0000927a0000947a0000967a0000987a00009a7a00009c7a00009e7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - F:\Unity\TuanJie\_Generation\true-live Next\Library\PlayModeViewStates\d6168c8481e4a514c9463c3f10377925
+  - F:\Unity\TuanJie\_Generation\true-live Next\Library\PlayModeViewStates\10e22f23534307042951797dbb8c7c39
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0

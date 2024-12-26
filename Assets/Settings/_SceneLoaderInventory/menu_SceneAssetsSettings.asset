@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: menu_SceneAssetsSettings
   m_EditorClassIdentifier: 
   loaderMapInfo:
-    isAllMap: 1
+    isAllMap: 0
     mapLabelReference:
       m_LabelString: rule_map_label
     loaderMapItems:
@@ -26,9 +26,11 @@ MonoBehaviour:
   - characterCode: znm
     characterLabelReference:
       m_LabelString: znm_label
+    isLoadGuide: 0
     bodySpriteInfo:
-      allLoader: 1
-      resourceCode: []
+      allLoader: 0
+      resourceCode:
+      - znm_a_0_1465
     faceSpriteInfo:
       allLoader: 0
       resourceCode:

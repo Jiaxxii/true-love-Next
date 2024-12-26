@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using ScriptableObjectSettings;
@@ -16,6 +17,7 @@ namespace Xiyu.Menu
     public sealed class MenuGameGuide : MonoBehaviour
     {
         [SerializeField] private Transform panel;
+
         [SerializeField] private AssetLabelReference defaultCharacterLabelReference;
         [SerializeField] private AssetLabelReference defaultGuideLabelReference;
         [SerializeField] private SceneAssetsSettings menuSceneAssetsSettings;
@@ -37,11 +39,7 @@ namespace Xiyu.Menu
 
         private void Awake()
         {
-            firstEncounterButton.OnPointerClickAction += _ =>
-            {
-                Addressables.ReleaseInstance(_currentCharacter.gameObject);
-                SceneManager.LoadSceneAsync("Select");
-            };
+            firstEncounterButton.OnPointerClickAction += UniTask.UnityAction<PointerEventData>(_ => LoadSelectScene());
         }
 
         private async void Start()
@@ -92,13 +90,45 @@ namespace Xiyu.Menu
 
             // 结束加载界面
             await globalEffectManger.LoaderEffect.TryEndLoading();
+            await UniTask.WaitForSeconds(0.5F);
             globalEffectManger.LoaderEffect.SetActive(false);
 
-            await globalEffectManger.MaskEffect.RuleFadeIn(3, ease: Ease.OutQuad);
+            await globalEffectManger.MaskEffect.RuleFadeIn(1, ease: Ease.OutQuad);
             globalEffectManger.SetTopActive(false);
             globalEffectManger.MaskEffect.SetRuleSprite(null);
         }
 
+
+        private async UniTaskVoid LoadSelectScene()
+        {
+            var globalEffectManger = GlobalEffectManger.Instance;
+            globalEffectManger.AllDefault();
+
+
+            globalEffectManger.MaskEffect.Alpha = 0;
+            await globalEffectManger.MaskEffect.FadeIn(2);
+
+            globalEffectManger.LoaderEffect.Loading();
+            globalEffectManger.MaskEffect.Alpha = 0;
+
+            // 释放资源
+            Addressables.ReleaseInstance(_currentCharacter.gameObject);
+            await Resources.UnloadUnusedAssets().ToUniTask();
+
+            var loadSceneAsync = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+
+            if (loadSceneAsync == null)
+            {
+                throw new NullReferenceException($"场景\"{SceneManager.GetActiveScene().name}\"没有下一个场景，场景编号为{SceneManager.GetActiveScene().buildIndex + 1}是不存在的！");
+            }
+
+            loadSceneAsync.allowSceneActivation = false;
+
+            await UniTask.WaitUntil(() => loadSceneAsync.progress >= 0.9f);
+
+            await globalEffectManger.LoaderEffect.TryEndLoading();
+            loadSceneAsync.allowSceneActivation = true;
+        }
 
         private void RegisterEvents(string rawEmotionCode, LoaderOptionSelectedInfo optionSelectedInfo)
         {

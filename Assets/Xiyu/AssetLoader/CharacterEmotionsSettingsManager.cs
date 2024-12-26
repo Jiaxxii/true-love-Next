@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using Cysharp.Threading.Tasks;
-using UnityEngine;
 
 namespace Xiyu.AssetLoader
 {
@@ -9,15 +8,15 @@ namespace Xiyu.AssetLoader
     {
         private static readonly ConcurrentDictionary<string, CharacterEmotionsSettings> BufferMap = new();
 
-        public static async UniTask<CharacterEmotionsSettings> CreateAsync(string characterCode,string addressableName, IProgress<float> progress)
+        public static async UniTask<CharacterEmotionsSettings> CreateAsync(string characterCode, string addressableName, IProgress<float> progress)
         {
             if (BufferMap.TryGetValue(characterCode, out var value))
             {
-                Debug.LogWarning($"\"{addressableName}\"立绘偏移信息已经创建，本次加载将直接返回实例对象引用！");
+                // UnityEngine.Debug.LogWarning($"\"{addressableName}\"立绘偏移信息已经创建，本次加载将直接返回实例对象引用！");
                 return value;
             }
 
-            var characterBodyOffsetSettings = await CharacterEmotionsSettings.CreateAsync(characterCode,addressableName, progress);
+            var characterBodyOffsetSettings = await CharacterEmotionsSettings.CreateAsync(characterCode, addressableName, progress);
             BufferMap.TryAdd(characterCode, characterBodyOffsetSettings);
             return characterBodyOffsetSettings;
         }

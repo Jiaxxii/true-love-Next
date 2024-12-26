@@ -24,7 +24,7 @@ namespace Xiyu.Select
 
             // 重置全局特效
             globalEffectManger.AllDefault();
-
+            
             // 隐藏顶层特效
             globalEffectManger.MaskEffect.Alpha = 0;
             // 弹出加载

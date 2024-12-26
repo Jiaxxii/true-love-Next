@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using Cysharp.Threading.Tasks;
-using UnityEngine;
 
 namespace Xiyu.AssetLoader
 {
@@ -13,7 +12,7 @@ namespace Xiyu.AssetLoader
         {
             if (BufferMap.TryGetValue(characterCode, out var value))
             {
-                Debug.LogWarning($"\"{addressableName}\"立绘偏移信息已经创建，本次加载将直接返回实例对象引用！");
+                // UnityEngine.Debug.LogWarning($"\"{addressableName}\"立绘偏移信息已经创建，本次加载将直接返回实例对象引用！");
                 return value;
             }
 

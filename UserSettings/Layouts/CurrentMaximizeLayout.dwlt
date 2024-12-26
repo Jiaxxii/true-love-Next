@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 22703
+  controlID: 25
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -49,9 +49,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 731
+    y: 613
     width: 1197
-    height: 620
+    height: 738
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -65,12 +65,12 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - F:\Unity\TuanJie\_Generation\true-live Next\Library\PlayModeViewStates\09dd25db133e9b045bfc2b590e90e865
+  - F:\Unity\TuanJie\_Generation\true-live Next\Library\PlayModeViewStates\10e22f23534307042951797dbb8c7c39
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1065, y: 599}
+  m_TargetSize: {x: 1197, y: 567}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -79,16 +79,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 0000000000000000000000000e000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -532.5
-    m_HBaseRangeMax: 532.5
-    m_VBaseRangeMin: -299.5
-    m_VBaseRangeMax: 299.5
+    m_HBaseRangeMin: -598.5
+    m_HBaseRangeMax: 598.5
+    m_VBaseRangeMin: -283.5
+    m_VBaseRangeMax: 283.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -97,7 +97,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -107,9 +107,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1197
-      height: 599
+      height: 717
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 598.5, y: 299.5}
+    m_Translation: {x: 598.5, y: 358.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -117,12 +117,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -598.5
-      y: -299.5
+      y: -358.5
       width: 1197
-      height: 599
+      height: 717
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1197, y: 620}
+  m_LastWindowPixelSize: {x: 1197, y: 738}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 22704
+  controlID: 26
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1198
-    height: 658
+    height: 540
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
@@ -203,7 +203,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 1197
-    height: 637
+    height: 519
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -562,9 +562,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.52227, y: 3.860945, z: -0.52573127}
+    m_Target: {x: -1.8172151, y: -1.1895697, z: -0.4838357}
     speed: 2
-    m_Value: {x: -11.52227, y: 3.860945, z: -0.52573127}
+    m_Value: {x: -1.8172151, y: -1.1895697, z: -0.4838357}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -614,9 +614,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.964161
+    m_Target: 6.774784
     speed: 2
-    m_Value: 10.964161
+    m_Value: 6.774784
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -659,9 +659,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 658
+    y: 540
     width: 1198
-    height: 641
+    height: 759
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 2}
@@ -732,9 +732,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6c86feff
-      m_LastClickedID: -96660
-      m_ExpandedIDs: 2646feffe889feff808efeffb08ffeff7e9bfeffa0b7feff48b8feff8ca4ffff82a5fffff2fafffff4ffffff6c780000767800005895000060950000
+      m_SelectedIDs: 1e970000
+      m_LastClickedID: 38686
+      m_ExpandedIDs: 1895fffffa95ffff8ce2ffff76e9ffff8ee9ffff90e9ffff6eefffff04fbfffff4ffffff6e84000078840000b4840000be840000dc960000e4960000f0960000f8960000289700003a97000044970000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -829,7 +829,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Fonts
+    - Assets/Resources/head icon
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -837,16 +837,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Fonts
+  - Assets/Resources/head icon
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Unity\TuanJie\_Generation\true-live Next
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae7a0000
-    m_LastClickedID: 31406
-    m_ExpandedIDs: 00000000887a00008a7a00008c7a00008e7a0000907a0000927a0000be7a000000ca9a3b
+    m_SelectedIDs: ce7a0000
+    m_LastClickedID: 31438
+    m_ExpandedIDs: 00000000907a0000927a0000947a0000967a0000987a00009a7a00009c7a00009e7a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -874,7 +874,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000887a00008a7a00008c7a00008e7a0000907a0000927a0000be7a000000ca9a3b
+    m_ExpandedIDs: 00000000907a0000927a0000947a0000967a0000987a00009a7a00009c7a00009e7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -899,10 +899,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6c86feff
-    m_LastClickedInstanceID: -96660
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 167b0000fc430000
+    m_SelectedInstanceIDs: 1e970000
+    m_LastClickedInstanceID: 38686
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 167b0000fc4300008c770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
