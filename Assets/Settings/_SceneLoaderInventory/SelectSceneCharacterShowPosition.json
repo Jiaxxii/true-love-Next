@@ -1,140 +1,176 @@
 ﻿{
   "fu-lun": {
-    "Position": {
-      "x": -78.0,
-      "y": -877.0
-    },
-    "Size": {
-      "Width": 3866.0,
-      "Height": 5869.213
-    },
-    "Pivot": {
-      "x": 0.5,
-      "y": 0.5
-    },
-    "EulerAngles": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "Scale": {
-      "x": 1.0,
-      "y": 1.0
+    "Use": false,
+    "CharacterName": "芙伦",
+    "DifficultyLevel": 2,
+    "Content": "芙伦是一位腼腆的少女。",
+    "Transform": {
+      "Position": {
+        "x": -78.0,
+        "y": -877.0
+      },
+      "Size": {
+        "Width": 3866.0,
+        "Height": 5869.213
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
     }
   },
   "ai-shi": {
-    "Position": {
-      "x": -108.0,
-      "y": -997.0
-    },
-    "Size": {
-      "Width": 2009.00012,
-      "Height": 3400.357
-    },
-    "Pivot": {
-      "x": 0.5,
-      "y": 0.5
-    },
-    "EulerAngles": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "Scale": {
-      "x": 1.0,
-      "y": 1.0
+    "Use": false,
+    "CharacterName": "爱实",
+    "DifficultyLevel": 6,
+    "Content": "爱实是一位不善与人交流的少女。",
+    "Transform": {
+      "Position": {
+        "x": -108.0,
+        "y": -997.0
+      },
+      "Size": {
+        "Width": 2009.00012,
+        "Height": 3400.357
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
     }
   },
   "znm": {
-    "Position": {
-      "x": -14.0,
-      "y": -915.0
-    },
-    "Size": {
-      "Width": 1310.0,
-      "Height": 3216.88257
-    },
-    "Pivot": {
-      "x": 0.5,
-      "y": 0.5
-    },
-    "EulerAngles": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "Scale": {
-      "x": 1.0,
-      "y": 1.0
+    "Use": true,
+    "CharacterName": "真奈美",
+    "DifficultyLevel": 1,
+    "Content": "真奈美是一位活泼的少女。",
+    "Transform": {
+      "Position": {
+        "x": -14.0,
+        "y": -915.0
+      },
+      "Size": {
+        "Width": 1310.0,
+        "Height": 3216.88257
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
     }
   },
   "you-zi": {
-    "Position": {
-      "x": 70.0,
-      "y": -817.0
-    },
-    "Size": {
-      "Width": 1636.02917,
-      "Height": 3187.99976
-    },
-    "Pivot": {
-      "x": 0.5,
-      "y": 0.5
-    },
-    "EulerAngles": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "Scale": {
-      "x": 1.0,
-      "y": 1.0
+    "Use": false,
+    "CharacterName": "优子",
+    "DifficultyLevel": 3,
+    "Content": "优子是一位喜欢照顾别人的“少女”。",
+    "Transform": {
+      "Position": {
+        "x": 70.0,
+        "y": -817.0
+      },
+      "Size": {
+        "Width": 1636.02917,
+        "Height": 3187.99976
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
     }
   },
   "xiao-deng": {
-    "Position": {
-      "x": -42.0,
-      "y": -392.0
-    },
-    "Size": {
-      "Width": 1851.73242,
-      "Height": 6363.0
-    },
-    "Pivot": {
-      "x": 0.5,
-      "y": 0.5
-    },
-    "EulerAngles": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "Scale": {
-      "x": 1.0,
-      "y": 1.0
+    "Use": false,
+    "CharacterName": "小澄",
+    "DifficultyLevel": 5,
+    "Content": "小澄？你才是被攻略的对象！",
+    "Transform": {
+      "Position": {
+        "x": -42.0,
+        "y": -392.0
+      },
+      "Size": {
+        "Width": 1851.73242,
+        "Height": 6363.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
     }
   },
   "mo-wang": {
-    "Position": {
-      "x": -33.0,
-      "y": -1123.0
-    },
-    "Size": {
-      "Width": 3329.0105,
-      "Height": 6757.0
-    },
-    "Pivot": {
-      "x": 0.5,
-      "y": 0.5
-    },
-    "EulerAngles": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "Scale": {
-      "x": 1.0,
-      "y": 1.0
+    "Use": false,
+    "CharacterName": "魔王",
+    "DifficultyLevel": 4,
+    "Content": "魔王，与她的名字一样，是一位强大的异世界魔女。",
+    "Transform": {
+      "Position": {
+        "x": -33.0,
+        "y": -1123.0
+      },
+      "Size": {
+        "Width": 3329.0105,
+        "Height": 6757.0
+      },
+      "Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "EulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Scale": {
+        "x": 1.0,
+        "y": 1.0
+      }
     }
   }
 }

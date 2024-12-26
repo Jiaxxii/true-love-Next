@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace Xiyu.Select
 
         private readonly Dictionary<string, Character> _characterDict = new();
 
-        private ConcurrentDictionary<string, LightweightRectTransform> _characterShowPositionDict;
+        private ConcurrentDictionary<string, LoaderSelectShowCharacterInfo> _characterShowPositionDict;
 
 
         private SceneAssetsSettings _sceneAssetsSettings;
@@ -38,6 +39,9 @@ namespace Xiyu.Select
         private Sequence _lastSequence;
 
 
+        public event Action<LoaderSelectShowCharacterInfo> OnCharacterPopUp;
+
+
         public async UniTask Init(SceneAssetsSettings sceneAssetsSettings)
         {
             _sceneAssetsSettings = sceneAssetsSettings;
@@ -47,18 +51,18 @@ namespace Xiyu.Select
             var handle = Addressables.LoadAssetAsync<TextAsset>("SelectSceneCharacterShowPosition");
             await handle.ToUniTask();
 
-            _characterShowPositionDict = JsonConvert.DeserializeObject<ConcurrentDictionary<string, LightweightRectTransform>>(handle.Result.text);
+            _characterShowPositionDict = JsonConvert.DeserializeObject<ConcurrentDictionary<string, LoaderSelectShowCharacterInfo>>(handle.Result.text);
             Addressables.Release(handle);
         }
 
 
-        public UniTask PopAsync(string characterCode)
+        public UniTask PopUpAsync(string characterCode)
         {
             var (bodySpriteInfo, faceSpriteInfo) = Find(characterCode);
-            return PopAsync(characterCode, bodySpriteInfo, faceSpriteInfo);
+            return PopUpAsync(characterCode, bodySpriteInfo, faceSpriteInfo);
         }
 
-        public async UniTask PopAsync(string characterCode, LoaderSpriteInfo bodySpriteInfo, LoaderSpriteInfo faceSpriteInfo)
+        public async UniTask PopUpAsync(string characterCode, LoaderSpriteInfo bodySpriteInfo, LoaderSpriteInfo faceSpriteInfo)
         {
             if (_lastCharacter != null)
             {
@@ -67,17 +71,17 @@ namespace Xiyu.Select
 
             var character = await LoadCharacterAsync(characterCode, bodySpriteInfo, faceSpriteInfo);
 
-            if (_characterShowPositionDict.TryGetValue(characterCode, out var lrt))
+            if (_characterShowPositionDict.TryGetValue(characterCode, out var characterInfo))
             {
-                character.Root.anchoredPosition = lrt.Position;
-                character.Root.localEulerAngles = lrt.EulerAngle;
+                character.Root.anchoredPosition = characterInfo.Transform.Position;
+                character.Root.localEulerAngles = characterInfo.Transform.EulerAngle;
 
 
                 character.Root.anchoredPosition = new Vector2(
                     -(_canvasTransform.sizeDelta.x.Half() + character.Root.sizeDelta.x.Half()),
                     character.Root.anchoredPosition.y);
 
-                SetAnimation(character, ref lrt);
+                SetAnimation(character, ref characterInfo);
             }
             else Debug.LogWarning($"注意：没有找到角色({characterCode})的显示位置信息，配置文件中可能未定义或者名称拼写有误！");
 
@@ -87,10 +91,12 @@ namespace Xiyu.Select
         }
 
 
-        private void SetAnimation(Character character, ref LightweightRectTransform lrt)
+        private void SetAnimation(Character character, ref LoaderSelectShowCharacterInfo characterInfo)
         {
             character.Root.DOKill();
-            character.Root.DOAnchorPosX(lrt.Position.x, showPositionDuration).SetEase(Ease.OutElastic);
+            character.Root.DOAnchorPosX(characterInfo.Transform.Position.x, showPositionDuration).SetEase(Ease.OutElastic);
+
+            OnCharacterPopUp?.Invoke(characterInfo);
 
             if (_lastCharacter != null)
                 _lastSequence.Kill();

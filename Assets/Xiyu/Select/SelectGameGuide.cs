@@ -5,6 +5,7 @@ using Cysharp.Threading.Tasks;
 using ScriptableObjectSettings;
 using UnityEngine;
 using Xiyu.AssetLoader;
+using Xiyu.DataStructure;
 
 namespace Xiyu.Select
 {
@@ -14,6 +15,8 @@ namespace Xiyu.Select
 
         [SerializeField] private ButtonSelectPanel buttonSelectPanel;
         [SerializeField] private CharacterSelectPanel characterSelectPanel;
+        [SerializeField] private CharacterResumePanel characterResumePanel;
+        [SerializeField] private ButtonSelectionComplete buttonSelectionComplete;
 
         private async void Start()
         {
@@ -37,6 +40,12 @@ namespace Xiyu.Select
 
             buttonSelectPanel.OnSelectCharacter += x => OnSelectCharacterEventHandler(x).Forget();
 
+            characterSelectPanel.OnCharacterPopUp += characterInfo =>
+            {
+                characterResumePanel.PopUpAsync(ref characterInfo);
+                buttonSelectionComplete.PopUp(characterInfo.Use);
+            };
+
 
             await characterSelectPanel.Init(sceneAssetsSettings);
 
@@ -59,7 +68,7 @@ namespace Xiyu.Select
                 return;
             }
 
-            await characterSelectPanel.PopAsync(selectCharacter.characterCode);
+            await characterSelectPanel.PopUpAsync(selectCharacter.characterCode);
         }
     }
 }
